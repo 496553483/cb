@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="swiper.min.css" />
+		<script src="jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="header-1">
+				<img src="img/首页方案1_06.jpg" />
+				<ul class="ul">
+					<li>
+						<p>首页</p>
+						<p>HOME</p>
+						<div style="display: none;" class="hide">
+							<ul>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<p>关于我们</p>
+						<p>ABOUT</p>
+						<div style="display: none;" class="hide">
+							<ul>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<p>公关互动</p>
+						<p>EVENTS</p>
+						<div style="display: none;" class="hide">
+							<ul>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<p>特殊服务</p>
+						<p>SERVICE</p>
+					</li>
+					<li>
+						<p>招贤纳士</p>
+						<p>JOIN</p>
+					</li>
+					<li>
+						<p>联系我们</p>
+						<p>CONTACT</p>
+					</li>
+				</ul>
+
+				<img src="img/首页方案1_03.jpg" / style="float: right;width: 99px;display: flex;align-items: center;">
+
+			</div>
+
+		</header>
+		<article>
+			<div class="swiper-container lb">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="img/首页方案1_16.jpg" alt="" style="width: 100%;height: 500px;">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/首页方案1_16.jpg" alt="" style="width: 100%;height: 500px;">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/首页方案1_16.jpg" alt="" style="width: 100%;height: 500px;">
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-pagination"></div>
+
+			</div>
+			<script>
+				var swiper2 = new Swiper(".lb", {
+					autoplay: 2000,
+					loop: true,
+					autoplayDisableOnInteraction: false,
+					pagination: ".swiper-pagination",
+					paginationClickable: true,
+					prevButton: ".swiper-button-prev",
+					nextButton: ".swiper-button-next",
+				})
+			</script>
+
+			<div class="text">
+				案例&服务<span style="font-size: 30px;">/</span>CASE & SERVICE
+			</div>
+
+			<div class="photo">
+				<img src="img/首页方案1_24.jpg" />
+				<img src="img/首页方案1_26.jpg" />
+				<img src="img/首页方案1_28.jpg" />
+				<img src="img/首页方案1_30.jpg" />
+			</div>
+
+			<div class="two">
+				<div class="text1">
+					案例&服务<span style="font-size: 30px;">/</span>CASE & SERVICE
+				</div>
+
+				<div class="text1">
+					案例&服务<span style="font-size: 30px;">/</span>CASE & SERVICE
+				</div>
+			</div>
+
+			<div class="three">
+				<div>
+					<div><img src="img/首页方案1_39.jpg" /></div>
+					<span>
+						放到沙发上的，是打发士大夫，水电费，啥的，速度，发，速度，发，，， 史蒂芬森大厦的辐射大，反倒是仿盛大，的沙发沙发，
+					</span>
+				</div>
+
+				<div>
+					<div><img src="img/首页方案1_41.jpg" /></div>
+					<span>
+	发士上的，是打发士大夫，水电费，啥的，到沙发上的，是打发士大夫，水电费，啥的，到沙发上的，是打发士大夫，水电费，啥的，到沙发上的，是打发士大夫，水电费，啥的，到沙发上的，是打发士大夫，水电费，啥的，速度，发，速度，发，，， 史蒂芬森大厦的辐射大，反倒是仿盛大，的沙发沙发，
+					</span>
+				</div>
+
+			</div>
+
+		</article>
+		<footer>
+			<div>
+				<p>电话：010-58629958 &nbsp;地址：北京是朝阳区四环中路80号大成国际公寓AEE0817</p>
+				<p>ICP备案号：泸ICP备16010584号：-1 Copyright @ 北京东方卓越公关顾问有限公司 2013 版权所有</p>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+			var ul = document.getElementsByClassName("ul")[0];
+			var div = document.getElementsByClassName("hide");
+			var li = ul.getElementsByTagName("li");
+			var i = 0
+
+			for(var i = 0; i < li.length; i++) {
+
+				li[i].onmouseover = function() {
+					//					alert(1)
+
+					for(var i = 0; i < li.length; i++) {
+						li[i].className=""
+					}
+					this.className = "color"
+				}
+
+			}
+
+		}
+	</script>
+
+</html>
